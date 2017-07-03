@@ -1,0 +1,55 @@
+/* Flex: Define that each child element will behave like a block inside the parent element*/
+/* Flex-wrap: Defines the direction and alignment of child elements within the parent element */
+/* Flex-direction: Sets the direction of the elements */
+/* Align-items: Vertical alignment of the elements*/
+/* nth-cild: Acess the elements to reference*/
+/* Flex-grow: Used to increase the size of a especific element child*/
+/* Flex-shrink: Used to reduce the size of a especific element child*/
+/* Flex-basis: Used to increase or reduce size of the remaining elements */
+/*Flex: Used like flex-grow, flex-shrink and flex-basis*/
+
+*{margin: 0; padding:0}
+
+#content{
+	display: flex; /*Start the flex box property*/
+	height: 500px; 
+	/*width: 500px;*/
+ 	background-color: #e7eef5;
+ 	flex-wrap: wrap; /*Define if the child elements will accept content break */
+ 	justify-content: flex-start;
+ 	align-items: center;
+}
+
+.item{
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 65px;
+	height: 100px;
+	width:250px;
+	color:black;
+	-webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.24); /*Do object works on Google Chrome*/
+	background-color: white;
+	margin: 5px;
+}
+.item:nth-child(1){
+	flex-grow: 1;
+}
+
+/*.item:nth-child(1){
+	order:4;
+	flex-grow: 1;
+}
+
+.item:nth-child(3){
+	order:1;
+}
+
+.item:nth-child(3){
+	order:4;
+}
+
+.item:nth-child(4){
+	order:3;
+}*/
+
+

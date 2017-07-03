@@ -1,0 +1,41 @@
+/*grid-row-start e grid-row-end: Define count line that grid object will start and end*/
+/*grid-columns-start e grid-columns-end: Define count comluns that grid object will start and end*/
+/*align-items: Aling an object in grid box: top, right, bottom or left*/
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+#main{
+	display: grid;
+	grid-template-areas: "header header" "nav nav" "article aside" "footer footer";
+	grid-template-columns:70% 30%;
+	grid-template-rows: 10vh 10vh 65vh 15vh;
+	grid-gap: 10px;
+}
+
+.mainHeader{
+	grid-area: header;
+	background-color: red;
+}
+
+.mainNav{
+	grid-area:nav;
+	background-color: green;
+}
+
+.mainArticle{
+	grid-area:article;
+	background-color: blue;
+}
+
+.mainAside{
+	grid-area:aside;
+	background-color: yellow;
+}
+
+.mainFooter{
+	grid-area:footer;
+	background-color: black;
+}
